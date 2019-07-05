@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".Number">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:gravity="bottom"
+        android:textColorHint="#000000"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+
+
+            android:background="@drawable/et2back"
+            android:drawableLeft="@drawable/age"
+            android:hint="@string/age"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="#ffffff"
+
+            android:textSize="13sp"
+            android:drawableStart="@drawable/age" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:gravity="bottom"
+        android:textColorHint="#000000"
+        android:theme="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+
+
+            android:background="@drawable/et2back"
+            android:drawableLeft="@drawable/call"
+            android:hint="@string/emergency_contact_number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="#ffffff"
+
+            android:textSize="13sp"
+            android:drawableStart="@drawable/call" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="#000000"
+            android:theme="@style/TextLabel"
+            android:gravity="bottom"
+
+            android:layout_height="65dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+
+
+                android:background="@drawable/et2back"
+                android:drawableLeft="@drawable/name"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="#ffffff"
+
+                android:textSize="13sp"
+                android:drawableStart="@drawable/name" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/num_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="151dp"
+        android:background="@drawable/buttondhuback"
+        android:text="@string/submit"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+
+
+
+
+    <!-- Link to Login Screen -->
+
+
+
+
+
+</RelativeLayout>

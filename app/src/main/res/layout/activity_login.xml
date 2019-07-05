@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fronts"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:theme="@style/TextLabel"
+            android:gravity="bottom"
+
+            android:layout_height="65dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et2back"
+
+                android:drawableLeft="@drawable/people"
+                android:hint="@string/username"
+                android:inputType="textWebEmailAddress"
+                android:maxLines="1"
+                android:textColor="#000000"
+
+
+                android:textColorHint="#000000"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/people" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="#000000"
+            android:theme="@style/TextLabel"
+            android:gravity="bottom"
+
+            android:layout_height="65dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:hint="@string/password"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/password"
+                android:background="@drawable/et2back"
+
+                android:drawableLeft="@drawable/openlock"
+
+                android:inputType="textPassword"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"/>
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttondhuback"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/sign_in_button"
+        android:text="@string/sign_in"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttondhuback"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+
+
+        android:id="@+id/sign_up_button"
+        style="?android:textAppearanceSmall"
+
+        android:text="@string/sign_up"
+        />
+
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/forget_password_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Forget Password?"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

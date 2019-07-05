@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav"
+    tools:context=".Navigation"
+    tools:showIn="@layout/app_bar_main"
+    >
+
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="333dp"
+        android:layout_height="58dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="0dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Life Saver"
+        android:searchHintIcon="@null"
+        android:searchIcon="@null"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/warnigoffline"
+        android:layout_width="238dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="82dp"
+        android:contentDescription="@string/emergecny"
+        android:src="@drawable/emerge"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/embtn2"
+        android:layout_width="97dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/search"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/sosred"
+        android:gravity="start"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <ExpandableListView
+        android:id="@+id/expandableList"
+        android:layout_width="match_parent"
+        android:layout_height="356dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="153dp"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="72dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/ic_menu"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shutter"
+    tools:context=".MainActivityvs"
+
+
+
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/embtn"
+        android:layout_width="98dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/sosred"
+        android:gravity="start"
+        android:text=""
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <ExpandableListView
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/exp" />
+
+    <ImageView
+        android:layout_width="238dp"
+        android:layout_height="62dp"
+        android:layout_above="@+id/warning"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-92dp"
+        android:layout_marginStart="15dp"
+        android:contentDescription="@string/emergecny"
+        android:src="@drawable/emerge"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/warning"
+        android:layout_width="245dp"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="135dp"
+        android:clickable="true"
+        android:contentDescription="@string/warning"
+        android:focusable="true"
+        app:srcCompat="@drawable/profile"
+        tools:ignore="RtlCompat" />
+
+</RelativeLayout>

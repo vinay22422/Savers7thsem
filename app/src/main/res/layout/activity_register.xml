@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".Register">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="#000000"
+            android:theme="@style/TextLabel"
+            android:gravity="bottom"
+
+            android:layout_height="65dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+
+
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:id="@+id/email"
+                android:background="@drawable/et2back"
+                android:textColorHint="#ffffff"
+
+
+                android:drawableLeft="@drawable/people"
+
+
+
+                android:inputType="textEmailAddress"
+
+                android:singleLine="true"
+                android:drawableStart="@drawable/people" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginRight="30dp"
+
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:textColorHint="#000000"
+            android:gravity="bottom"
+            android:theme="@style/TextLabel"
+            android:layout_height="65dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:hint="  PASSWORD"
+
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@drawable/et2back"
+                android:id="@+id/password"
+
+                android:drawableLeft="@drawable/openlock"
+
+                android:inputType="textPassword"
+
+
+                android:focusableInTouchMode="true"
+
+
+                />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttondhuback"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/sign_up_button"
+        android:text="Sign up"
+        style="?android:textAppearanceSmall"
+
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttondhuback"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp"
+
+        android:id="@+id/sign_in_button"
+        android:text="Sign In"
+
+        />
+
+
+
+
+    <!-- Link to Login Screen -->
+
+
+
+
+
+</LinearLayout>

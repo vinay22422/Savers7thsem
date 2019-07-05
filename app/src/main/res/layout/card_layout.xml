@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="cards_main_container"
+>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="354dp"
+        android:layout_height="452dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        card_view:background="@drawable/one"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="7dp"
+        card_view:cardUsesCopatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/template_internal"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_above="@+id/tvVersion"
+                android:layout_alignStart="@+id/tvVersion"
+                android:text="@string/title"
+                android:textColor="@color/colorAccen"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:layout_alignLeft="@+id/tvVersion" />
+
+            <TextView
+                android:id="@+id/tvVersion"
+                android:layout_width="322dp"
+                android:layout_height="325dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="18dp"
+                android:text="@string/version"
+                android:textSize="22sp"
+                android:typeface="sans" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
